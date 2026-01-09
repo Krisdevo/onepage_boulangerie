@@ -1,0 +1,135 @@
+
+.cookie-container {
+    background: #8B5E3C;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    width: 90%;
+    height: 280px;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2000;
+}
+
+/* Cookie text */
+.cookie-container .cookie-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.cookie-container .cookie-text p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Logo */
+.cookie-container .logo-cookie {
+    transform: scale(0.6);
+    width: 8rem;
+    height: 8rem;
+}
+
+/* Titles */
+.cookie-container .cookie-title {
+    color: rgb(240, 176, 57);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cookie-container .cookie-subtitle {
+    font-weight: lighter;
+
+}
+
+/* Button */
+.cookie-container .btn-cookie {
+    background-color: #8B5E3C;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    border: 1px solid white;
+    justify-self: end;
+}
+
+/* Invisible */
+.invisible {
+    display: none;
+}
+
+/* ================== MEDIA QUERIES ================== */
+
+@media screen and (min-width: 768px) {
+    .cookie-container {
+        width: 80%;
+        height: 30rem;
+        padding: 1rem;
+    }
+
+    .cookie-container .cookie-text {
+        width: 60%;
+    }
+
+    .cookie-container .cookie-text .cookie-title {
+        font-size: 2rem;
+    }
+
+    .cookie-container .cookie-text p {
+        font-size: 1.5rem;
+    }
+
+    .cookie-container .cookie-text .btn-cookie {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .cookie-container .logo-cookie {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cookie-container {
+        width: 70%;
+    }
+
+    .cookie-container .cookie-text .cookie-title {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .cookie-container .cookie-text .btn-cookie {
+        font-size: 1rem;
+    }
+
+    .cookie-container .cookie-text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .cookie-container {
+        width: 50%;
+    }
+
+    .cookie-container .cookie-text .cookie-title {
+        font-size: 3rem;
+    }
+
+    .cookie-container .cookie-text .btn-cookie {
+        font-size: 1.5rem;
+    }
+
+    .cookie-container .cookie-text p {
+        font-size: 2rem;
+    }
+}
