@@ -26,7 +26,6 @@ Bootstrap est intégré afin de faciliter la création de composants UI réutili
 
 Pour utiliser ce projet en local, il suffit de cloner le repository :
 
-git clone https://github.com/votre-utilisateur/nom-du-repo.git
-
+git clone https://github.com/Krisdevo/onepage_boulangerie.git
 
 Une fois le projet cloné, ouvrez simplement le fichier index.html dans votre navigateur. Le site est prêt à être personnalisé selon les besoins de l’artisan (contenu, couleurs, images, sections, etc.).
