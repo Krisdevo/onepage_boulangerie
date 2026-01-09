@@ -1,0 +1,89 @@
+/* ========================================
+   MENU BURGER - MOBILE FIRST
+   ======================================== */
+
+/* Par défaut (mobile) : le burger est visible */
+#burger {
+  display: block;
+}
+
+/* Boutons hamburger */
+#open,
+#close {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #F5EFE6;
+  cursor: pointer;
+  z-index: 1001; /* Au-dessus du menu burger (qui est à 99) */
+  padding: 0;
+  line-height: 1;
+  position: relative; /* Nécessaire pour que le z-index fonctionne */
+}
+
+#open {
+  display: block;
+}
+
+#close {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+/* Menu burger navigation */
+.burger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #8B5E3C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.burger-nav.active {
+  transform: translateX(0);
+}
+
+.burger-nav a {
+  color: #F5EFE6;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  transition: color 0.3s ease;
+}
+
+.burger-nav a:hover {
+  color: rgb(240, 176, 57);
+}
+
+/* Navigation desktop cachée par défaut */
+.desktop-nav {
+  display: none !important;
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+
+@media screen and (min-width: 1000px) {
+  /* Cache le burger sur desktop */
+  #burger {
+    display: none !important;
+  }
+  
+  /* Affiche le menu desktop */
+  .desktop-nav {
+    display: flex !important;
+  }
+}

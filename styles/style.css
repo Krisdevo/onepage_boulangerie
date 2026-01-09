@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rouge+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+    scroll-behavior: smooth
+}
+
+ body {
+    height:100%;
+    width: 100%;
+
+}
+
+header{
+    width: 100%;
+    height: 10rem;
+    background-color: #8B5E3C ;
+    display: flex;
+
+}
+.headerNav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 45%;
+
+    display: none;
+    justify-content :end;
+    gap: 1rem;
+    align-items: center;
+}
+
+.titleBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleBox img{
+
+    height: 3rem;
+    width: 3rem;
+}
+
+
+nav a, footer a{
+    text-decoration: none;
+    color:rgb(249, 245, 245);
+
+}
+
+nav a:hover, footer a:hover, .CTABanner:hover,.CTANav:hover{
+    color: rgb(240, 176, 57);
+}
+
+
+.banner{
+    background: url(../images/pain.jpg) no-repeat center/cover ;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+.slogan{
+    font-size: 1.5rem;
+    color: white;
+    background-color: #f5efe61a;
+}
+
+.CTABanner{
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color:  #4E342E;
+    color: white;
+    border: none;  
+}
+
+.CTABanner a{
+    text-decoration: none;
+    color: white
+}
+
+.CTABanner a:hover{
+    color:rgb(240, 176, 57);
+}
+
+
+
+h1{
+    color: rgb(249, 245, 245);
+    font-size: 1.5rem;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+
+}
+
+h2,h3,h4{
+
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #4E342E;
+    font-weight: 600;
+    padding-top:1rem;
+}
+
+h3{
+    margin-bottom: 2rem;
+}
+
+ p{
+    color: #4E342E;
+    
+}
+
+
+
+#shop{
+
+    background-color:#F5EFE6 ;
+}
+
+
+.shop_cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#shop .card{
+    margin: 1rem 0;
+    height: 100%;
+}
+
+#shop p{
+    text-align: center;
+    margin : 1rem 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card img{
+    max-height: 190px;
+}
+
+.card .title-card{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.card p{
+    color: #4E342E;
+    text-align: center;
+    margin: auto;
+}
+
+.title-card img{
+
+    height: 2rem;
+    width:2rem;
+}
+
+
+.carousel{
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-item{
+        max-height: 180px;
+}
+.carousel-it.carousel-item img {
+
+    object-fit: cover; 
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.carousel-caption .title-carousel{
+    color: white;
+}
+
+#schedule{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    margin: 2rem 0;
+    background-color: #F5EFE6;
+}
+
+#schedule .container{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#schedule .container p{
+    text-align: center;
+}
+.planning{
+	display: flex;
+    flex-wrap: wrap;
+
+}
+
+.trait{
+	width: 100%;
+	height: 1px;
+	background-color:#4E342E;
+}
+
+.trait-titre{
+	width: 50%;
+	height: 1px;
+	background-color:#4E342E;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.jour{
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.jour p{
+	padding: 20px;
+	text-align: center;
+    color:#4E342E;
+}
+
+footer{
+    margin: 0;
+    background-color:#8B5E3C;
+}
+
+.adress .maps iframe{
+    width: 100%;
+    height: 400px;
+}
+.adress .adress-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer,.phone, .adress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.location img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.phone, .mail, .location{
+    margin: 1rem 0;
+}
+
+.phone img{
+    height: 6rem;
+    width: 6rem;
+}
+
+.phone a{
+    text-decoration: none;
+    color: #4E342E;
+}
+footer{
+     color:rgb(249, 245, 245);
+    text-align: center;
+}
+
+footer p{
+    color: white;
+}
+
+.socialbar{
+    margin-top: 1rem;
+}
+.socialbar img{
+    height:4rem;
+    width :4rem;
+}
+
+
+@keyframes fade{
+	from{opacity: 0}
+	to {opacity: 1}
+}
+
+.scroll-haut{
+
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 6;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	font-size: 30px;
+	background-color: #8B5E3C;
+	color:rgb(249, 245, 245) ;
+	width: 50px;
+	height: 50px;
+	border-radius: 1rem;
+	text-align: center;
+	border: 3px solid #4E342E;
+	animation: fade;
+	animation-timeline: scroll(y);
+	animation-range: 0 10%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    .banner{
+        height: 250px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p, a{
+        font-size: 1.3rem;
+    }
+
+    .CTABanner{
+        width: 30%;
+    }
+
+    .maps{
+        width: 100%;
+    }
+
+    .maps iframe{
+        width: 100%;
+    }
+
+    .carousel-item{
+        max-height: 400px;
+}
+
+}
+
+@media screen and (min-width: 1000px){
+
+    .headerNav{
+        justify-content: space-evenly;
+    }
+    nav{
+        display: flex;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .banner{
+        height: 400px;
+    }
+
+    .CTABanner{
+        width: 15%;
+    }
+
+
+    .shop_cards{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin: 3rem 0;
+    }
+
+
+    #shop .card{
+        width: 30%;
+        height: 600px;
+    }
+
+    .carousel{
+        width: 75%;
+        height: auto;
+    }
+
+    .carousel-item{
+        max-height: 800px;
+    }   
+     .adress{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .location .maps{
+        width: 75%;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+
+    }
+    .infobar{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 16rem;
+    }
+
+    .mail{
+        margin-left:4rem;
+    }
+
+    .location{
+        margin-top: 3rem;
+    }
+
+
+}
