@@ -16,10 +16,6 @@ JavaScript apporte le dynamisme nécessaire, notamment pour :
 
 - le menu burger (navigation responsive),
 
-- un formulaire de contact simulant une validation côté client ainsi qu’un envoi fictif.
-
-- La modale d'information de  cookie
-
 Bootstrap est intégré afin de faciliter la création de composants UI réutilisables, comme le carousel, et d’assurer une mise en page responsive rapidement.
 
 ## 🚀 Démarrer le projet

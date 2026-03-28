@@ -1,3 +1,5 @@
+@import'./colors';
+
 /* ========================================
    MENU BURGER - MOBILE FIRST
    ======================================== */
@@ -15,7 +17,7 @@
   border: none;
   color: #F5EFE6;
   cursor: pointer;
-  z-index: 1001; /* Au-dessus du menu burger (qui est à 99) */
+  z-index: 1001; /* Au-dessus du menu burger (qui est à 999) */
   padding: 0;
   line-height: 1;
   position: relative; /* Nécessaire pour que le z-index fonctionne */
@@ -23,10 +25,6 @@
 
 #open {
   display: block;
-}
-
-#close {
-  display: none;
 }
 
 #close {
@@ -49,22 +47,22 @@
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 999;
-}
 
-.burger-nav.active {
-  transform: translateX(0);
-}
+  &.active {
+    transform: translateX(0);
+  }
 
-.burger-nav a {
-  color: #F5EFE6;
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  transition: color 0.3s ease;
-}
+  a {
+    color: #F5EFE6;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    transition: color 0.3s ease;
 
-.burger-nav a:hover {
-  color: rgb(240, 176, 57);
+    &:hover {
+      color: rgb(240, 176, 57);
+    }
+  }
 }
 
 /* Navigation desktop cachée par défaut */
