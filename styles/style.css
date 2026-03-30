@@ -66,8 +66,8 @@ nav a:hover, footer a:hover, .CTABanner:hover,.CTANav:hover{
 }
 
 
-.banner{
-    background: url(../images/pain.jpg) no-repeat center/cover ;
+.banner {
+    background: url(../images/pain.jpg) no-repeat center/cover;
     height: 200px;
     width: 100%;
     display: flex;
@@ -75,34 +75,26 @@ nav a:hover, footer a:hover, .CTABanner:hover,.CTANav:hover{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+    position: relative;
 }
 
-.slogan{
-    font-size: 1.5rem;
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.slogan {
+    font-size: 1.2rem;
     color: white;
-    background-color: #f5efe61a;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative; 
+    z-index: 1;
 }
-
-.CTABanner{
-    width: 50%;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    background-color:  #4E342E;
-    color: white;
-    border: none;  
-}
-
-.CTABanner a{
-    text-decoration: none;
-    color: white
-}
-
-.CTABanner a:hover{
-    color:rgb(240, 176, 57);
-}
-
 
 
 h1{
@@ -276,7 +268,22 @@ footer{
     align-items: center;
 }
 
-footer,.phone, .adress{
+#contact{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer,.phone, .mail, .adress{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,12 +299,12 @@ footer,.phone, .adress{
     margin: 1rem 0;
 }
 
-.phone img{
+.phone img, .mail img{
     height: 6rem;
     width: 6rem;
 }
 
-.phone a{
+.phone a, .mail a{
     text-decoration: none;
     color: #4E342E;
 }
@@ -357,6 +364,8 @@ footer p{
         height: 250px;
     }
 
+
+
     h1{
         font-size: 2rem;
     }
@@ -373,10 +382,6 @@ footer p{
         font-size: 1.3rem;
     }
 
-    .CTABanner{
-        width: 30%;
-    }
-
     .maps{
         width: 100%;
     }
@@ -391,13 +396,26 @@ footer p{
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1024px){
+
+    header{
+        width: 100%;
+    }
 
     .headerNav{
-        justify-content: space-evenly;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
     }
     nav{
         display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        
     }
 
     h1{
@@ -408,9 +426,11 @@ footer p{
         height: 400px;
     }
 
-    .CTABanner{
-        width: 15%;
+    .slogan{
+        font-size: 1.5rem;
     }
+
+
 
 
     .shop_cards{
@@ -458,6 +478,24 @@ footer p{
         gap: 16rem;
     }
 
+    #contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    .contact-box{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6rem;
+    }
+
+    .phone, .mail{
+       width: 30%;
+    }
     .mail{
         margin-left:4rem;
     }
