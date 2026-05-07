@@ -528,5 +528,9 @@ footer p{
 
         width: 20% !important;
     }
+
+    .carousel{
+        width: 60%;
+    }
     
 }
