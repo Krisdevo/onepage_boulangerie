@@ -153,12 +153,21 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
 }
 
-.card-img-top{
-    min-height: 250px;
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    min-height: unset; 
 }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 
 .card .title-card{
     display: flex;
@@ -171,7 +180,7 @@ h3{
 .card p{
     color: #4E342E;
     text-align: center;
-    margin: auto;
+    flex: 1;
 }
 
 .title-card img{
@@ -300,8 +309,8 @@ footer,.phone, .mail, .adress{
 }
 
 .phone img, .mail img{
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .phone a, .mail a{
@@ -375,6 +384,10 @@ footer p{
         font-size: 2rem;
     }
 
+    .shop_cards .card{
+        width: 45% !important;
+    }
+
     p, a{
         font-size: 1.3rem;
     }
@@ -432,16 +445,19 @@ footer p{
 
     .shop_cards{
         flex-direction: row;
-        justify-content: space-evenly;
-
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
         margin: 3rem 0;
     }
 
 
     #shop .card{
-        width: 33%;
-        height: auto;
-        min-height: 680px;
+    width: 30% !important;
+    height: unset !important; /* laisse stretch faire son travail */
+    align-self: stretch
     }
 
     .carousel{
@@ -504,4 +520,13 @@ footer p{
     }
 
 
+}
+
+@media screen  and (min-width: 1440px){
+
+    #shop .card{
+
+        width: 20% !important;
+    }
+    
 }
