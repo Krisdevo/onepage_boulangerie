@@ -20,7 +20,7 @@
 
 header{
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     background-color: #8B5E3C ;
     display: flex;
 
@@ -123,11 +123,19 @@ h3{
     
 }
 
+section{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 
 #shop{
 
     background-color:#F5EFE6 ;
+
 }
 
 
@@ -153,6 +161,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 5px 5px 0 5px rgba(0, 0, 0, 0.067);
 }
 
 .card-img-top {
@@ -189,6 +198,16 @@ h3{
     width:2rem;
 }
 
+#product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product p{
+    text-align: center;
+    padding: 1rem;
+}
 
 .carousel{
     width: 90%;
@@ -265,6 +284,12 @@ h3{
 footer{
     margin: 0;
     background-color:#8B5E3C;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .adress .maps iframe{
@@ -290,6 +315,7 @@ footer{
     align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 footer,.phone, .mail, .adress{
@@ -297,6 +323,15 @@ footer,.phone, .mail, .adress{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+.mail, .phone{
+    padding: 1rem;
+    background-color: #F5EFE6;
+    width: 75%;
+    border: 1px solid #4E342E;
+    box-shadow: 5px 5px 0 5px rgba(0, 0, 0, 0.067);
+    border-radius: 5px;
 }
 
 .location img{
@@ -440,6 +475,10 @@ footer p{
         font-size: 1.5rem;
     }
 
+    .trait-titre{
+        width: 35%;
+    }
+
 
 
 
@@ -531,6 +570,10 @@ footer p{
 
     .carousel{
         width: 60%;
+    }
+
+    .trait-titre{
+        width: 20%;
     }
     
 }
